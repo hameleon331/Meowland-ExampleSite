@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeowLand</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <p class="site-title">MeowLand</p>
+
+            <button id="AdoptionListButton" onclick="showAdoptionList();">
+        Pending adoptions
+    </button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="home">
+            <div>
+                <h2>Meowland! the Purrfect cat purradise!</h2>
+
+                <p>
+                    What is MeowLand? It is a group project headed by the famous Catherine Catipaw with the main goal being to create the biggest cat haven on earth!
+                    Every cat lover has heard of the Japanese cat islands and villages or the massive populations of stray cats in Instanbul but these happened naturally and incidentally.
+                    Our goal is to see how far we can push it if we try to do it on purpose. MeowLand functionally serves as a large reserve for cats, a cat safari with large open areas,
+                    picturesque nature exhibits and a cozy village, populated only by the staff taking care of the cats. Imagine Disney land but for cats, a sort of... *Meow land*? <br><br>
+
+                    Thanks to generous funding by Miss Catherine MeowLand stretches for just about 4,000 square kilometers, cares for ~800,000 cats (as of 2026) and employs 950 caretakers
+                    including trained veterinarians, volunteers and proffesional cleaners as well as 500 additional personel for clerical tasks and environment managment. We plan to expand
+                    even further with time while making sure the numbers remain managable and safe for our feline friends. We are always recruiting more staff and taking suggestions so by
+                    all means do feel free to contact us anytime! We are waiting for your call! <br><br>
+
+                    Our cats are well taken care of, fed with balanced cat food of our own creation, regularly groomed and cleaned as well as given lots of love and attention from both the
+                    caretakers and visiting cat lovers. Our veterinary team is working over time to curb any disease that may otherwise spread and ensures proper neutering and spading
+                    (As much as we would love to increase the number of our cats even further we need to do it at a controlled rate to remain safe). <br><br>
+
+                    All this ensures that cat lovers like YOU may visit and enjoy this little piece of feline heaven! Come on down and feel like an egyptian pharaoh for a few hours, our
+                    cats are friendly and very social so wherever you go you're sure to be followed by a cloud of them eager to play! Any of them strike your fancy? Well you can also adopt
+                    them! All profits go to further expansion and cat care so you can feel good about it too! What are you waiting for? MeowLand is waiting for you!
+                </p>
+            </div>
+        </section>
+
+
+        <section id="section-one">
+
+            <h2>Browse our cats</h2>
+
+            <button id="reroll-cats" class="reroll-button">
+                Reroll cats
+            </button>
+
+            <div id="cats-grid" class="cats-grid"></div>
+
+        </section>
+
+
+        <section id="section-two">
+            <h2>More cats</h2>
+
+            <div id="cats-grid-two" class="cats-grid">
+                <img src="pictures/catisl1.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl2.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl3.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl4.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl5.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl6.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl7.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl8.jpg" style="width:200px;height:200px; object-fit:cover;">
+                <img src="pictures/catisl9.jpg" style="width:200px;height:200px; object-fit:cover;">
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Cat profile -->
+    <div id="cat-profile" class="cat-profile">
+
+        <div class="cat-profile__content">
+
+            <button id="close-profile" class="cat-profile__close">
+                Back
+            </button>
+
+            <div id="profile-images" class="cat-profile__images"></div>
+
+            <h2 id="profile-name"></h2>
+
+            <p id="profile-description"></p>
+
+            <p id="profile-price" class="cat-profile__price"></p>
+
+            <div class="adoption-actions">
+    <button id="profile-adopt" class="cat-profile__adopt">
+        Add to adoption list
+    </button>
+
+    <button id="profile-cancel" class="cat-profile__cancel" style="display:none;">
+        Cancel adoption
+    </button>
+ </div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
